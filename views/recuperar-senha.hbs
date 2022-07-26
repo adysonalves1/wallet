@@ -1,0 +1,42 @@
+{{>nav-login}}
+
+ <main class="principal">
+
+        <!-- INICIO AREA DE LOGIN -->
+
+        <section class="form-login">
+        <div class="container">
+
+            <h2>Recuperar senha</h2>
+
+            {{#if msg}}
+            <p class="error-alert">{{msg}}</p>
+            {{else}}
+            {{/if}}
+
+            <form action="/recuperar-senha" method="post">
+
+                <label for="email">E-mail cadastrado:</label>
+                <input type="email" name="email" id="email" placeholder="seuemail@exemplo.com" required>
+
+                <label for="data-nascimento">Informe sua data de nascimento:</label>
+                <input type="date" name="dataNascimento" id="dataNascimento" required>
+
+                <label for="cpf">CPF:</label>
+                <input type="text" name="cpf" id="cpf" placeholder="Somente números*" required>
+
+                <input type="submit" value="Recuperar Senha">
+
+
+            </form>
+
+            <span class="legenda-form"><a href="/login">Já tem uma conta? Acesse agora!</a> </span>
+
+            <span class="legenda-form"><a href="/criar-contal"><strong> Ainda não tem conta? Crie sua conta.</strong></a> </span>
+
+        </div>
+    </section>
+
+    </main>
+
+{{>footer-login}}

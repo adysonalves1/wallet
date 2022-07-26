@@ -1,0 +1,28 @@
+{{>nav-login}}
+
+ <main class="principal">
+
+        <!-- INICIO AREA DE LOGIN -->
+
+        <section class="form-login">
+        <div class="container">
+
+            <h2>Nova senha: </h2>
+
+            <form action="/update-passwd" method="post">
+
+                <label for="senha">Nova senha:</label>
+                <input type="hidden" name="id" id="{{id}}" value="{{id}}">
+                <input type="senha" name="senha" id="senha" placeholder="Senha de 8 digitos" required>
+
+                <input type="submit" value="Alterar senha">
+
+
+            </form>
+
+        </div>
+    </section>
+
+    </main>
+
+{{>footer-login}}

@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+
+:root {
+    --main-color: #d3ad7f;
+    --black: #13131a;
+    --bg: #010103;
+    --border: .1rem solid rgba(255, 255, 255, .3);
+}
+
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(255, 255, 255);
+}
+
+section {
+    padding: 2rem 7%;
+}
+
+
+.btn {
+    margin-top: 1rem;
+    border-radius: 6px;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color: rgb(255, 255, 255);
+    background: #21598e;
+    cursor: pointer;
+}
+
+.btn:hover {
+    letter-spacing: .2rem;
+}
+
+
+
+
+/*  TOPO   */
+
+
+
+.header {
+    background: #2971B5;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+}
+
+/*LOGO TOPO */
+
+.header .logo img {
+    border-radius: 50%;
+    height: 6rem;
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+/* botom topo   */
+
+.header .navbar a:hover {
+    color: black;
+
+}
+
+#menu-btn {
+    display: none;
+}
+
+.header .search-form {
+    position: absolute;
+    top: 115%;
+    right: 7%;
+    background: #fff;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+.header .search-form.active {
+    transform: scaleY(1);
+}
+
+
+/*IMG DO TOPO */
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #EFF0E8;
+}
+
+/*  Texto na Img */
+
+
+.home .content {
+    max-width: 60rem;
+}
+
+.home .content h3 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.home .content p {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #000000;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.content.img {
+    display: flex;
+    justify-content: right;
+}
+
+.content.img img {
+    width: 80%;
+}
+
+/* cor da Especificação */
+.about .row {
+    display: flex;
+    align-items: center;
+    background: rgb(41, 113, 181);
+    background: -moz-linear-gradient(130deg, rgba(41, 113, 181, 1) 29%, rgba(0, 114, 205, 1) 100%);
+    background: -webkit-linear-gradient(130deg, rgba(41, 113, 181, 1) 29%, rgba(0, 114, 205, 1) 100%);
+    background: linear-gradient(130deg, rgba(41, 113, 181, 1) 29%, rgba(0, 114, 205, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2971b5", endColorstr="#0072cd", GradientType=1);
+    flex-wrap: wrap;
+    padding: 35px;
+    border-radius: 10px;
+}
+
+.about .row .image {
+    flex: 1 1 45rem;
+}
+
+.about .row .image img {
+    width: 80%;
+}
+
+.about .row .content {
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+
+.about .row .content h3 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.about .row .content p {
+    font-size: 1.6rem;
+    color: #ccc;
+    padding: 1rem 0;
+    line-height: 1.8;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+
+/* CAIXA DE Comentario*/
+
+
+.menu .box-container .box:hover>* {
+    color: rgb(0, 0, 0);
+}
+
+.review .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+
+.review .box-container .box {
+    border: rgb(121, 155, 83);
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.review .box-container .box p {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: #000;
+    padding: 2rem 0;
+    background-color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+
+.review .box-container .box .user {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review .box-container .box h3 {
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+}
+
+.review .box-container .box .stars i {
+    font-size: 1.5rem;
+    color: rgb(238, 205, 18);
+}
+
+
+.comp {
+    display: flex;
+}
+
+
+/* Contato */
+
+
+.contact .row {
+    display: flex;
+    background: rgb(41, 113, 181);
+    background: -moz-linear-gradient(130deg, rgba(41, 113, 181, 1) 29%, rgba(0, 114, 205, 1) 100%);
+    background: -webkit-linear-gradient(130deg, rgba(41, 113, 181, 1) 29%, rgba(0, 114, 205, 1) 100%);
+    background: linear-gradient(130deg, rgba(41, 113, 181, 1) 29%, rgba(0, 114, 205, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2971b5", endColorstr="#0072cd", GradientType=1);
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.contact .row .map {
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact .row form {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.contact .row form h3 {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.contact .row form .inputBox {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: var(--bg);
+    border: black;
+}
+
+.contact .row form .inputBox span {
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.contact .row form .inputBox input {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+    text-transform: none;
+    background: none;
+}
+
+.blogs .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+
+.blogs .box-container .box {
+    border: var(--border);
+}
+
+.blogs .box-container .box .image {
+    height: 25rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+.blogs .box-container .box .image img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.blogs .box-container .box:hover .image img {
+    transform: scale(1.2);
+}
+
+.blogs .box-container .box .content {
+    padding: 2rem;
+}
+
+.blogs .box-container .box .content .title {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.blogs .box-container .box .content .title:hover {
+    color: var(--main-color);
+}
+
+.blogs .box-container .box .content span {
+    color: var(--main-color);
+    display: block;
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+
+.blogs .box-container .box .content p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #ccc;
+    padding: 1rem 0;
+}
+
+.footer {
+    background: var(--black);
+    text-align: center;
+}
+
+.footer .share {
+    padding: 1rem 0;
+}
+
+.footer .share a {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    border: var(--border);
+    margin: .3rem;
+    border-radius: 50%;
+}
+
+.footer .share a:hover {
+    background-color: var(--main-color);
+}
+
+.footer .links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+
+.footer .links a {
+    padding: .7rem 2rem;
+    color: #fff;
+    border: var(--border);
+    font-size: 2rem;
+}
+
+.footer .links a:hover {
+    background: var(--main-color);
+}
+
+.footer .credit {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: lighter;
+    padding: 1.5rem;
+}
+
+.footer .credit span {
+    color: blue;
+}
+
+/* media queries  */
+@media (max-width:991px) {
+
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 1.5rem 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+    }
+
+    .header .navbar.active {
+        right: 0;
+    }
+
+    .header .navbar a {
+        color: white;
+        display: inline-block;
+        margin: 2rem 0.8rem 1.5rem 0.8rem;
+        padding: .5rem;
+        font-size: 1.8rem;
+    }
+
+    .header .search-form {
+        width: 90%;
+        right: 2rem;
+    }
+
+    .home {
+        background-position: left;
+        min-height: 100vh;
+        text-align: center;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .home .content h3 {
+        font-size: 4.5rem;
+    }
+
+    .home .content p {
+        font-size: 1.5rem;
+    }
+
+    .content.img {
+        justify-content: center
+    }
+
+    .content.img img {
+        width: 60%;
+        margin-bottom: 25px;
+    }
+
+}
+
+@media (max-width:450px) {
+
+    html {
+        font-size: 50%;
+    }
+
+}

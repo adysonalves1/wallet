@@ -1,0 +1,73 @@
+{{>nav-login}}
+
+<main class="principal">
+
+        <section class="form-login">
+            <div class="container">
+
+                <h2>Crie sua conta</h2>
+
+                <form action="/cadastrar" method="post">
+                    <label for="tipo_conta">Você é? *:</label>
+                    <select name="tipo_conta" id="tipo_conta" required>
+                        <option value="" disabled selected>Selecione...</option>
+                        <option value="aluno">ALUNO</option>
+                        <option value="funcionario">FUNCIONÁRIO</option>
+                    </select>
+
+                    <label for="nome">Nome completo *:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Ex: Jõao Silva" autocomplete="off" required>
+
+                    <label for="email">E-mail *:</label>
+                    <input type="email" name="email" id="email" placeholder="seuemail@seuemail.com" required>
+
+                    <label for="cpf">CPF *:</label>
+                    <input type="text" name="cpf" id="cpf" placeholder="000.000.000-00" required>
+
+                    <label for="dataNascimento">Data de nascimento *:</label>
+                    <input type="date" name="dataNascimento" id="dataNascimento" required>
+
+                    <label for="telefone">Telefone*:</label>
+                    <input type="tel" name="telefone" id="telefone" placeholder="(81) xxxxx-xxxx" required>
+
+                    <label for="instituicao">Selecione a sua instituição *:</label>
+                    <select name="instituicao" id="instituicao" required>
+                        {{#if select}}
+                        <option value="" selected disabled>Selecione...</option>
+                        {{#each dados}}
+                        <option value="{{codigo}}">{{nome_instituicao}}</option>
+                        {{/each}}
+                        {{else}}
+                        <option >Nenhuma instituição cadastrada</option>
+                        {{/if}}
+                    </select>
+
+                    <label for="matricula">Matrícula:</label>
+                    <input type="text" name="matricula" id="matricula" placeholder="Obrigatório para alunos">
+
+                    <label for="senha">Crie uma senha*:</label>
+                    <input type="password" name="senha" id="senha" placeholder="Senha de 8 digitos" maxlength="8" required>
+
+
+                    <div class="termos">
+                    <input type="checkbox" name="termos" id="termos" required> <label for="termos">Aceitos os</label><a href="#" target="_blank">Termos do serviço</a>
+                    </div>
+
+                    <input type="submit" id="submit" value="Cadastrar">
+
+                    
+
+
+                </form>
+                
+
+            </div>
+        </section>
+
+
+
+    </main>
+
+<script src="/js/{{mask}}.js"></script>
+
+{{>footer-login}}

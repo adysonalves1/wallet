@@ -1,0 +1,45 @@
+<main class="principal">
+    <div class="container">
+        <h2>Cadastros aguardando ativação</h2>
+         {{#if table}}
+        <table class="table table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#CONTA</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">CPF</th>
+                    <th scope="col">E-mail</th>
+                    <th scope="col">Telefone</th>
+                    <th scope="col">Saldo</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Ações</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+               
+                {{#each dados}}
+                <tr>
+                    <th>{{numero_conta}}</th>
+                    <td>{{nome_completo}}</td>
+                    <td>{{CPF}}</td>
+                    <td>{{email}}</td>
+                    <td>{{telefone}}</td>
+                    <td>R$ {{saldo}}</td>
+                    <td>{{status_conta}}</td>
+                    <td>
+                        <form action="/active-cliente">
+                        <input type="hidden" name="id" value="{{id_cliente}}">
+                        <button type="submit" class="btn btn-primary">Ativar Cadastro</button>
+                        </form>
+                    </td>
+                </tr>
+                {{/each}}
+                {{else}}
+                <p>Nenhum cliente aguardando ativação..</p>
+                
+            </tbody>
+            {{/if}}
+        </table>
+    </div>
+</main>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acessar conta >> Coin</title>
+    <link rel="stylesheet" href="./estilo.css">
+
+    <script src="https://unpkg.com/vh-check/dist/vh-check.min.js"></script>
+<script>
+  (function () {
+    // initialize the test
+    var test = vhCheck();
+  }());
+</script>
+</head>
+
+<body>
+
+    <section class="main">
+        <div class="form-image">
+            <img src="/images/login.svg" alt="banner login">
+        </div>
+
+        <div class="form-login">
+
+            <h1>ACESSAR CONTA</h1>
+
+            <form action="/login" method="post">
+                <input type="text" name="email" id="email" placeholder="E-mail" autofocus required>
+                <input type="password" name="senha" id="senha" placeholder="Senha" required>
+                <input type="submit" value="Entrar">
+            </form>
+
+            <span><a href="/recuperar-senha">Esqueci minha senha</a></span>
+
+            <div class="new-user">
+                <h2>Ainda não tem uma conta?</h2>
+
+                <a href="/criar-conta">
+                    <button>CRIAR CONTA</button>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>

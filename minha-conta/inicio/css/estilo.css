@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+:root {
+    --cor-principal: #2971B5;
+    --cor-secundaria: #21598E;
+    --cor-textos: #222629;
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+    font-family: 'Roboto', sans-serif;
+    color: var(--cor-textos);
+    position: relative;
+}
+
+main.principal{
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+.topo {
+    background-color: #fff;
+    width: 100%;
+    height: 70px;
+}
+
+.topo .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.087);
+    justify-content: space-between;
+}
+
+.topo .user-area{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.topo .user-profile {
+    background-color: var(--cor-principal);
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    margin-right: 15px;
+    
+}
+
+.topo .user-profile img{
+    width: 100%;
+}
+
+.topo ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.topo li{
+    margin-left: 15px;
+}
+
+.topo li a {
+    background-color: var(--cor-principal);
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.topo li a:hover {
+    background-color: var(--cor-textos);
+}
+
+/* ÁREA DE CONTEUDO */
+section.user-nav{
+    width: 100%;
+    background-color: var(--cor-principal);
+}
+
+section.user-nav .container{
+    /* border: 1px solid black; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.user-nav-option {
+    background-color: #fff;
+    width: 100%;
+    padding: 15px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.087);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    color: var(--cor-principal);
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.user-nav-option .nav-option-icon{
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.user-nav-option .nav-option-title{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.user-nav-option a, a:visited, a:active{
+    text-decoration: none;
+    color: var(--cor-principal);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+section.transactions{
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+section.transactions .container{
+    background-color: #fff;
+    height: 50vh;
+    padding: 15px;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+div.payments-container{
+    background-color: #fff;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+}
+
+
+.thumb-payment{
+    width: 100%;
+    padding: 35px 0;
+    display: flex;
+    justify-content: center;
+    transition-duration: 0.8s;
+}
+
+.thumb-payment img{
+    width: 30%;
+    -webkit-animation:zoom-in-out 1s ease 0s 1 normal;
+    -moz-animation:zoom-in-out 1s ease 0s 1 normal;
+    -ms-animation:zoom-in-out 1s ease 0s 1 normal;
+    animation:zoom-in-out 1s ease 0s 1 normal;
+    
+}
+    
+    @-webkit-keyframes zoom-in-out {
+    0%{ -webkit-transform: scale(1); transform: scale(1); }
+    50%{ -webkit-transform: scale(1.2); transform: scale(1.2); }
+    100%{ -webkit-transform: scale(1); transform: scale(1); }
+    }
+    
+    @keyframes zoom-in-out {
+    0%{ -ms-transform: scale(1); transform: scale(1); }
+    50%{ -ms-transform: scale(1.2); transform: scale(1.2); }
+    100%{ -ms-transform: scale(1); transform: scale(1); }
+    }
+
+section.transactions h3{
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+section.transactions span{
+    color: #929292;
+}
+
+.information-text{
+    color: var(--cor-principal);
+    font-size: 0.8rem;
+}
+/* INICIO DA ESTILIZAÇÃO DE TODOS OS FORMULÁRIOS DAS PÁGINAS */
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 30px;
+    padding: 0 15px;
+}
+
+label{
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+}
+
+input{
+    margin-bottom: 12px;
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    padding-left: 15px;
+    font-family: 'Roboto';
+    font-size: 1rem;
+}
+
+input::placeholder{
+    font-size: 1rem;
+    color: #2226296e;
+}
+
+form .termos{
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+form .termos a{
+    text-decoration: none;
+    margin-left: 5px;
+    font-weight: 600;
+    color: var(--cor-textos);
+    font-size: 0.9rem;
+}
+
+input[type=checkbox]{
+    padding: 0;
+    margin-right: 10px;
+    width: 15px;
+    height: 15px;
+}
+
+input[type=submit]{
+    background-color: var(--cor-principal);
+    border: 0;
+    padding: 0;
+    color: #fff;
+    height: 45px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+input[type=submit]:hover{
+    background-color: var(--cor-secundaria);
+    cursor: pointer;
+}
+
+button{
+    background-color: var(--cor-principal);
+    border-radius: 5px;
+    border: 0;
+    padding: 5px;
+    color: #fff;
+    height: 25px;
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+button a:link, button a:visited, button a:active{
+    color: #ffff;
+    text-decoration: none;
+}
+
+
+.rodape{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    padding: 30px;
+    bottom: 0px;
+}

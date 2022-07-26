@@ -1,0 +1,8 @@
+{{#if MsgSucess}}
+<span class="sucess-alert">Conta criada com sucesso!</span>
+<p>Solicite a ativação da sua conta na sua instituição de ensino!</p>
+{{else}}
+{{#each erros}}
+<p class="error-alert">{{mensagem}}</p>
+{{/each}}
+{{/if}}
