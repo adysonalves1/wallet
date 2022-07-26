@@ -15,6 +15,7 @@ O processo de criação das tabelas ocorrerá de forma automatizada assim que o 
 <p>Com o servidor rodando, acesse o seu Banco de dados MySql e execute o comando abaixo:</p>
 <span>INSERT INTO instituicoes (nome_instituicao,endereco,cidade,bairro,UF,cep,telefone,createdAt,updatedAt) values('IFPE - CAMPUS RECIFE','Av. Prof. Luís Freire, 500','Recife','Cidade Universitária','PE','50740-545',' 8121251600','2019-07-09 11:42:00','2019-07-09 11:42:00');</span>
 
+<br/><br/>
 
 <span> Equipe: Adyson, David, Gabriel Eugenio </span>
 
