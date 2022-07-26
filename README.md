@@ -16,3 +16,6 @@ O processo de criação das tabelas ocorrerá de forma automatizada assim que o 
 <span>INSERT INTO instituicoes (nome_instituicao,endereco,cidade,bairro,UF,cep,telefone,createdAt,updatedAt) values('IFPE - CAMPUS RECIFE','Av. Prof. Luís Freire, 500','Recife','Cidade Universitária','PE','50740-545',' 8121251600','2019-07-09 11:42:00','2019-07-09 11:42:00');</span>
 
 
+<span> Equipe: Adyson, David, Gabriel Eugenio </span>
+
+
