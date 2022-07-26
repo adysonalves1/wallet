@@ -28,7 +28,7 @@
     const Estabelecimento = require('./src/models/Estabelecimento');
     const Transacoes = require('./src/models/Transacoes')
 
-    // await database.sequelize.sync({force:true})
+    await database.sequelize.sync()
     
     
     
